@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Assertions;
 
 import org.junit.Test;
 import main.ChildCredit;
+import main.Child;
 
 public class ChildCreditTests {
 
