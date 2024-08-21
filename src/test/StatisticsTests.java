@@ -3,7 +3,7 @@ package test;
 import org.junit.jupiter.api.Assertions;
 
 import org.junit.jupiter.api.Test;
-import soln.Statistics;
+import main.Statistics;
 
 public class StatisticsTests {
 	
