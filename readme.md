@@ -405,17 +405,15 @@ rerun the test suite until all tests pass.
 When all test cases pass, you will get 100% on that assignment. If a portion of your test cases do not pass, the portion of failed tests will be subtracted from your assignment grade. 
 
 ### 7.2 Submitting
-When you are done with the assignment, submit it to Canvas.
+When you are done with the assignment, submit it to Canvas. You should zip your *entire* project file, and then submit the zip file to Canvas. *Do not submit only .java files to Canvas.*
 
 1. Open a browser to https://stmarys-ca.instructure.com/ 
 2. Login and select our course. 
 3. Navigate to the "Lab 1" assignment and click on it. 
-4. Hand in the following files:
-  * `Natural.java`
-  * `ChildCredit.java`
-  * `Statistics.java`
-  * `Birthday.java`
+4. Hand in the following file:
+* CS222-Lab01.zip
+
 You can either click to upload files from your file explorer, or you can drag-and-drop the files. 
 You 
-will be able to re-handin the same file as many times as you want up 
+will be able to re-handin the project as many times as you want up 
 until the due date.
