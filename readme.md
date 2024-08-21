@@ -98,6 +98,8 @@ want to reference this step-by-step process in subsequent labs.
 <img src="images/clonerepo.png" alt="Clone Repository" width="50%"/>
 </p>  
 
+If this option does not appear, it may prompt you to install Git. Do so, then return to this step.
+
 4. Copy/paste or type the URL into the text box that appears:
 
 https://github.com/sroscoe2/CS222-Lab01/
@@ -166,10 +168,11 @@ line.
 Command line arguments are available to your main method through 
 the `args` array of Strings.  The size of this array 
 can be obtained by using `args.length` which is an
-integer.  Modify your code to iterate through this array and convert 
-the arguments to integers using the following snippet of code:
+integer.  Modify the code of `StatisticsDemo.java` to iterate through this array and convert 
+the arguments to integers. You should first comment out with `/**` and `*/` lines 17 through 31. Then replace its function using the following snippet of code:
 
 ```java
+int[] array = new int[args.length];
 for(int i=0; i<args.length; i++) {
   array[i] = Integer.parseInt(args[i]);
 }
@@ -178,16 +181,20 @@ for(int i=0; i<args.length; i++) {
 The *command line* may not be apparent as you are using an IDE.  
 However, it is still available to you.  Instead of clicking the "Play" 
 button to run your program, click the link in the "Run and Debug" tabs to create a `launch.json` file. 
-You will see a list of configurations in curly brackets. 
+You will see several lists of configurations in curly brackets, one for each Java file in the project. Navigate to the list that contains `"mainClass": "main.StatisticsDemo",`. 
 
 
 
-*Add a comma to the last configuration line*, then add a new line that says "args":"[NUMBERS]", where `[NUMBERS]` is replaced by a list of space-delimited numbers, such as "5 12 502 6723 34".
-Save the JSON file, then click the play button to run your code. 
+*Add a comma to the final configuration line in that list*, then add a new line that says "args":"[NUMBERS]", where `[NUMBERS]` is replaced by a list of space-delimited numbers, such as "5 12 502 6723 34".
 
 Example line:
 
 `"args":"5 12 502 6723 34"`
+
+
+Save the JSON file. 
+The "Run and Debug" menu has changed, and now there is a dropdown list next to the play button at the top. Select `StatisticsDemo`, then click the play button to run your code. 
+
 
 
 
@@ -230,8 +237,8 @@ stylistic features.  It is best practice to get in the habit of writing
 good, clean code automatically.  However, if you need to clean up a file 
 in one shot you can do use the auto-formatter feature.  
 
-* On Windows: press `I DON'T KNOW` to reformat the code
-* On Mac: press `option-shift-f` to reformat the code
+* On Windows: press `shift+alt+f` to reformat the code
+* On Mac: press `option+shift+f` to reformat the code
 
 Another issue with the code is that it is using `lower_underscore_casing` 
 for some of its variables.  Change the variable names to the preferred 
@@ -325,12 +332,14 @@ data.
     provided for you. An array mapping integer values 1 thru 10 to text
     values has also been created for you.
 
-2.  Write a `for`-loop and a `while`-loop in the relevant methods to
+2. Add a command-line argument for the `Natural` file in `launch.json`. 
+
+3.  Write a `for`-loop and a `while`-loop in the relevant methods to
     compute the sum of natural numbers 1 thru `n` and return the 
     result.  In the `main` method call your methods and output 
     the result.  
     
-3.  Write a an enhanced for-loop to iterate over the elements of the `zeroToTen`
+4.  Write a an enhanced for-loop to iterate over the elements of the `zeroToTen`
     array. As you iterate over the elements, concatenate each
     string, delimited by a single space to a result string and print the
     result at the end of the loop. Your result should look something
@@ -407,10 +416,14 @@ When all test cases pass, you will get 100% on that assignment. If a portion of 
 ### 7.2 Submitting
 When you are done with the assignment, submit it to Canvas. You should zip your *entire* project file, and then submit the zip file to Canvas. *Do not submit only .java files to Canvas.*
 
-1. Open a browser to https://stmarys-ca.instructure.com/ 
-2. Login and select our course. 
-3. Navigate to the "Lab 1" assignment and click on it. 
-4. Hand in the following file:
+1. Reveal your project in the file explorer. Right-click any file, then select "Reveal in Finder" (Mac) or "Reveal in File Explorer" (Windows).
+2. Go one level up with `cmd+up` (Mac) or `alt+up` (Windows) until you see the folder called `CS222-Lab01`.
+3. Right click on the folder and click "Compress" (Mac) or "Send to -> Compressed (zipped) folder" (Windows).
+4. Name the resultant zip file `CS222-Lab01smc1` where `smc1` is YOUR SMC username.
+5. Open a browser to https://stmarys-ca.instructure.com/ 
+6. Login and select our course. 
+7. Navigate to the "Lab 1" assignment and click on it. 
+8. Hand in the following file:
 * CS222-Lab01.zip
 
 You can either click to upload files from your file explorer, or you can drag-and-drop the files. 
