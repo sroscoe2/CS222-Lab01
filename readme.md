@@ -45,24 +45,27 @@ In pair programming, one person is the *driver* and the other is the *navigator*
 Each week, you should try to alternate: if you were the driver last week, you should be navigator this week, or vice versa. Any conflicts should be resolved in your group. 
 
 ## 1. Getting Started
-### 1.1. Setup
 
-#### Install Java Developer Kit (JDK)
-You may already have "Java" installed on your computer, but this
-is most likely the Java Virtual Machine (JVM) that allows you to
-run Java programs.  To actually develop Java programs you need a
-Java Development Kit (JDK). Here is a link to install an open-source JDK:
-https://adoptium.net/
-
-There are several alternative JDKs and you are welcome to explore them.
-
-#### 1.2. Install VS Code
+### 1.1. Install VS Code
 Visual Studio Code (VS Code) is a text editor and IDE that supports many programming languages. 
 Many other IDEs exist and are popular among programmers. You may use or try others if you wish. However, we may not be able to help you with course assignments if you are using a different IDE (we will certainly try!). Download and install VS Code for your system at the following link: 
 
 https://code.visualstudio.com/download 
 
-Once you do that, you should also install  "Extension Pack for Java".
+Once you do that, **you should also install  "Extension Pack for Java"**.
+
+#### 1.2. Install Java Developer Kit (JDK)
+You may already have "Java" installed on your computer, but this
+is most likely the Java Virtual Machine (JVM) that allows you to
+run Java programs.  To actually develop Java programs you need a
+Java Development Kit (JDK). 
+
+After you install the "Extension Pack for Java", It will prompt you to install a JDK. 
+You may install the default option given to you by VS Code. 
+
+If you want to do it separately, here is a link to install an open-source JDK:
+https://adoptium.net/
+There are several alternative JDKs and you are welcome to explore them.
 
 ## 2. Cloning a repository from Github
 Each lab will have some starter code and other *artifacts* 
@@ -79,15 +82,29 @@ To check out the code for this lab, do the following.  You may
 want to reference this step-by-step process in subsequent labs.
 
 1. Open a new window in VS Code. You can find the shortcut by going to the menu option `File -> New Window` on the top left of your screen. 
+<p align="center">
+<img src="images/newwindow.png" alt="Open New Window" width="50%"/>
+</p>  
 
 2. Click on the "Source Control" tab on the left hand side of VS Code. 
 
+<p align="center">
+<img src="images/sourcecontrol.png" alt="Source Control" width=40/>
+</p>  
+
 3. Then click "Clone Repository".
+
+<p align="center">
+<img src="images/clonerepo.png" alt="Clone Repository" width="50%"/>
+</p>  
 
 4. Copy/paste or type the URL into the text box that appears:
 
 https://github.com/sroscoe2/CS222-Lab01/
 
+<p align="center">
+<img src="images/reponame.png" alt="Provide repository URL" width="1000%"/>
+</p>  
 
 5. Choose the directory where you want your project to be saved. **The default option may not be ideal.** You should save the project in the same overall directory as your other Java projects for this class.
 
@@ -114,9 +131,19 @@ Virtual Machine (JVM).
 
 4. Click on the play button on the left hand column (Run and Debug), then click on the big button labeled "Run and Debug". 
 
+<p align="center">
+<img src="images/runAndDebug.png" alt="Run and Debug" width="50%"/>
+</p>  
+
 5. The output for this program will appear in the "Terminal" tab at the bottom of your screen.
 
-6. Click on the console tab and enter the input as specified.
+6. Click on the "Terminal" tab and enter the input as specified.
+
+<p align="center">
+<img src="images/terminal.png" alt="Terminal" width="100%"/>
+</p>  
+
+NOTE: If you ever close the terminal, you can open it again by pressing `` ctrl + ` `` (backtick, found above the `tab` key).  Alternatively, you can use the top menu `View -> Terminal` option to open it again. 
 
 ### 3.1.2 Completing the Statistics Program
 
@@ -151,8 +178,18 @@ for(int i=0; i<args.length; i++) {
 The *command line* may not be apparent as you are using an IDE.  
 However, it is still available to you.  Instead of clicking the "Play" 
 button to run your program, click the link in the "Run and Debug" tabs to create a `launch.json` file. 
-You will see a list of configurations in curly brackets. Add a comma to the last configuration line, then add a new line that says "args":"[NUMBERS]", where `[NUMBERS]` is replaced by a list of space-delimited numbers, such as "5 12 502 6723 34".
+You will see a list of configurations in curly brackets. 
+
+
+
+*Add a comma to the last configuration line*, then add a new line that says "args":"[NUMBERS]", where `[NUMBERS]` is replaced by a list of space-delimited numbers, such as "5 12 502 6723 34".
 Save the JSON file, then click the play button to run your code. 
+
+Example line:
+
+`"args":"5 12 502 6723 34"`
+
+
 
 ## 4. IDE Orientation
 
