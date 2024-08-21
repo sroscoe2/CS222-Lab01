@@ -6,7 +6,7 @@ import java.util.List;
 import org.junit.jupiter.api.Assertions;
 
 import org.junit.Test;
-import soln.ChildCredit;
+import main.ChildCredit;
 
 public class ChildCreditTests {
 
