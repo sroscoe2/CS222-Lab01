@@ -169,7 +169,7 @@ Command line arguments are available to your main method through
 the `args` array of Strings.  The size of this array 
 can be obtained by using `args.length` which is an
 integer.  Modify the code of `StatisticsDemo.java` to iterate through this array and convert 
-the arguments to integers. You should first comment out with `/**` and `*/` lines 17 through 31. Then replace its function using the following snippet of code:
+the arguments to integers. You should first comment out with `/*` and `*/` lines 17 through 31. Then replace its function using the following snippet of code:
 
 ```java
 int[] array = new int[args.length];
