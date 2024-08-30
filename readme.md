@@ -220,7 +220,7 @@ and utilities for dealing with dates, times, intervals, durations, etc.
 2. The JAR file, `joda-time-2.0.jar` has been included in the project 
 in the `lib` folder.  External libraries are usually kept in a hierarchy 
 of folders like this (you can create your own folders by right-clicking 
-the project and selecting "Add folder to workspace").
+the project and selecting "New Folder", or clicking the plus button at the top by a picture of a folder).
 3. *If there are compilation errors in `Birthday.java`*, open the "JAVA PROJECTS" menu at the bottom of the Explorer view. 
 4. Scroll down to "Referenced Libraries", and click the plus button. 
 5. Navigate to the `joda-time-2.0.jar` file and select it. 
